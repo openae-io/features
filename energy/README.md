@@ -9,7 +9,7 @@ tags: [basic]
 The energy is the integral of the squared signal.
 
 $$
-{Energy} = \sum_{i = 0}^{N}{x_i ^ 2}
+{Energy} = \sum_{i=0}^{N-1}{x_i ^ 2}
 $$
 
 ## References

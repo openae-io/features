@@ -10,7 +10,7 @@ The centroid frequency of a spectrum indicates where the center of mass of the s
 It is commonly associated with the measure of the brightness of a sound.
 
 $$
-{SpectralCentroid} = \frac{f_s}{2(n - 1)} \frac{\sum_{i = 0}^{n}{i S_i}}{\sum_{i = 0}^{n}{S_i}} 
+{SpectralCentroid} = \frac{f_s}{2(n - 1)} \frac{\sum_{i=0}^{N-1}{i S_i}}{\sum_{i=0}^{N-1}{S_i}} 
 $$
 
 Where $S_i$ is the amplitude corresponding to bin $i$ in the DFT spectrum.

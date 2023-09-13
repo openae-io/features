@@ -9,7 +9,7 @@ tags: [basic]
 The shape factor is defined as the ratio of the RMS value and the mean of absolute values.
 
 $$
-{ShapeFactor} = \frac{\sqrt{\frac{1}{N} \sum_{i = 0}^{N}{x_i ^ 2}}}{\frac{1}{N} \sum_{i = 0}^{N}{|x_i|}}
+{ShapeFactor} = \frac{\sqrt{\frac{1}{N} \sum_{i=0}^{N-1}{x_i ^ 2}}}{\frac{1}{N} \sum_{i=0}^{N-1}{|x_i|}}
 $$
 
 ## References

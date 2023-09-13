@@ -10,7 +10,7 @@ The crest factor is defined as the ratio of the peak amplitude to the RMS of a s
 It can be intepreted as a measure for the impulsiveness of a signal.
 
 $$
-{CrestFactor} = \frac{\max |x_i|}{\sqrt{\frac{1}{N} \sum_{i = 0}^{N}{x_i ^ 2}}}
+{CrestFactor} = \frac{\max |x_i|}{\sqrt{\frac{1}{N} \sum_{i=0}^{N-1}{x_i ^ 2}}}
 $$
 
 ## Applications

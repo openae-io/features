@@ -9,7 +9,7 @@ tags: [basic]
 The margin factor is defined as the ratio of the peak amplitude and the square mean of square root of absolute values.
 
 $$
-{MarginFactor} = \frac{\max |x_i|}{(\frac{1}{N} \sum_{i = 0}^{N}{\sqrt{|x_i|}})^2}
+{MarginFactor} = \frac{\max |x_i|}{(\frac{1}{N} \sum_{i=0}^{N-1}{\sqrt{|x_i|}})^2}
 $$
 
 ## Applications
