@@ -21,7 +21,7 @@ Where $m \in [0, M)$ is the bin index of the spectrum $X$ and the power spectrum
 
 ## References
 
-- Eyben, F. (2015). Real-time speech and music classification by large audio feature space extraction. Springer.
+- Eyben, F. (2016). Real-time Speech and Music Classification by Large Audio Feature Space Extraction. https://doi.org/10.1007/978-3-319-27299-3
 
 ## Code
 
