@@ -1,6 +1,5 @@
 ---
 title: RMS
-inputdomain: time
 tags: [basic]
 ---
 

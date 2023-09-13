@@ -1,6 +1,5 @@
 ---
 title: Kurtosis
-inputdomain: time
 tags: [statistics]
 ---
 

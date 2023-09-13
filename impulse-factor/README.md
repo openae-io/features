@@ -1,6 +1,5 @@
 ---
 title: Impulse factor
-inputdomain: time
 tags: [basic]
 ---
 

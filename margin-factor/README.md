@@ -1,6 +1,5 @@
 ---
 title: Margin factor
-inputdomain: time
 tags: [basic]
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: K-factor
-inputdomain: time
 tags: [basic]
 ---
 

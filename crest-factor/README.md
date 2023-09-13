@@ -1,6 +1,5 @@
 ---
 title: Crest factor
-inputdomain: time
 tags: [basic]
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Energy
-inputdomain: time
 tags: [basic]
 ---
 

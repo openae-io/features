@@ -1,6 +1,5 @@
 ---
 title: Spectral centroid
-inputdomain: fft
 tags: [spectral, spectral moments]
 ---
 

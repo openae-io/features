@@ -1,6 +1,5 @@
 ---
 title: Shape factor
-inputdomain: time
 tags: [basic]
 ---
 

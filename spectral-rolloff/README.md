@@ -1,6 +1,5 @@
 ---
 title: Spectral rolloff
-inputdomain: fft
 tags: [spectral]
 ---
 

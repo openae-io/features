@@ -1,6 +1,5 @@
 ---
 title: Variance
-inputdomain: time
 tags: [statistics]
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Zero-crossing rate
-inputdomain: time
 tags: [basic]
 ---
 

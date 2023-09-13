@@ -1,6 +1,5 @@
 ---
 title: Clearance factor
-inputdomain: time
 tags: [basic]
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Skewness
-inputdomain: time
 tags: [statistics]
 ---
 
