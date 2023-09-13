@@ -11,7 +11,7 @@ The ZCR is computed by counting the zero crossings and converting it to a rate i
 
 $$
 \begin{aligned}
-{ZCR} &= \frac{f_s}{N} \sum_{i=1}^{N-1}{|p(x_i) - p(x_{i - 1})|} \\
+{ZCR} &= \frac{f_s}{N} \sum_{i=1}^{N-1}{|p(x[i]) - p(x_{i - 1})|} \\
 p(x) &= \begin{cases}
 1 & x \geq 0 \\
 0 & x < 0

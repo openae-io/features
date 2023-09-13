@@ -12,8 +12,8 @@ The skewness is computed using the third central moment:
 $$
 \begin{aligned}
 {Skewness} &= \frac{m_3}{m_2^{3/2}} \\
-m_k &= \frac{1}{N} \sum_{i=0}^{N-1}{(x_i - \overline{x})^k} \\
-\overline{x} &= \frac{1}{N} \sum_{i=0}^{N-1}{x_i}
+m_k &= \frac{1}{N} \sum_{i=0}^{N-1}{(x[i] - \overline{x})^k} \\
+\overline{x} &= \frac{1}{N} \sum_{i=0}^{N-1}{x[i]}
 \end{aligned}
 $$
 

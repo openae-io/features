@@ -8,7 +8,7 @@ tags: [basic]
 The K-factor is defined as the product of peak amplitude and RMS.
 
 $$
-{KFactor} = \max |x_i| \cdot \sqrt{\frac{1}{N} \sum_{i=0}^{N-1}{x_i ^ 2}}
+{KFactor} = \max |x[i]| \cdot \sqrt{\frac{1}{N} \sum_{i=0}^{N-1}{x[i] ^ 2}}
 $$
 
 ## References
