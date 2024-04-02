@@ -22,6 +22,13 @@ $$
 
 Typical values for $n$ are 95, 90, 75 and 50 %.
 
+
+## Parameters
+
+| Name      | Description        | Unit | Limits   |
+|-----------|--------------------|------|----------|
+| `rolloff` | Roll-off point $n$ | %    | [0, 100] |
+
 ## References
 
 - Peeters, G. (2004). A large set of audio features for sound description (similarity and classification) in the CUIDADO project. In CUIDADO IST Project Report (Vol. 54).
