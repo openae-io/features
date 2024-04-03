@@ -22,6 +22,3 @@ The result is in the range of 0 Hz and the nyquist frequency (half the sampling 
 
 - https://en.wikipedia.org/wiki/Spectral_centroid
 
-## Code
-
-<<< code.py

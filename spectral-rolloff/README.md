@@ -22,7 +22,6 @@ $$
 
 Typical values for $n$ are 95, 90, 75 and 50 %.
 
-
 ## Parameters
 
 | Name      | Description        | Unit | Limits   |

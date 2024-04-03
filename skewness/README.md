@@ -21,6 +21,3 @@ $$
 
 - https://en.wikipedia.org/wiki/Skewness
 
-## Code
-
-<<< code.py

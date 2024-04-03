@@ -23,6 +23,3 @@ $$
 
 - https://de.mathworks.com/help/predmaint/ug/signal-features.html
 
-## Code
-
-<<< code.py

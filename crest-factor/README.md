@@ -22,6 +22,3 @@ $$
 - Caesarendra, W., & Tjahjowidodo, T. (2017). A Review of Feature Extraction Methods in Vibration-Based Condition Monitoring and Its Application for Degradation Trend Estimation of Low-Speed Slew Bearing. Machines, 5(4), 21. https://doi.org/10.3390/machines5040021
 - Abouel-seoud, S. A. (2018). Fault detection enhancement in wind turbine planetary gearbox via stationary vibration waveform data. Journal of Low Frequency Noise Vibration and Active Control. https://doi.org/10.1177/1461348417725950
 
-## Code
-
-<<< code.py

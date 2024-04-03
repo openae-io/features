@@ -15,6 +15,3 @@ $$
 
 - Farrar, C. R., & Worden, K. (2012). Structural health monitoring: a machine learning perspective. John Wiley & Sons.
 
-## Code
-
-<<< code.py

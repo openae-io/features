@@ -15,6 +15,3 @@ $$
 
 - https://en.wikipedia.org/wiki/Energy_(signal_processing)
 
-## Code
-
-<<< code.py

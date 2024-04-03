@@ -21,6 +21,3 @@ $$
 
 - http://en.wikipedia.org/wiki/Root_mean_square
 
-## Code
-
-<<< code.py

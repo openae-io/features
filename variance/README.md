@@ -18,6 +18,3 @@ $$
 
 - https://en.wikipedia.org/wiki/Variance
 
-## Code
-
-<<< code.py

@@ -21,6 +21,3 @@ $$
 
 - https://en.wikipedia.org/wiki/Kurtosis
 
-## Code
-
-<<< code.py
