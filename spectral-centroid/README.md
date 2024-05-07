@@ -10,7 +10,7 @@ It is commonly associated with the measure of the brightness of a sound.
 
 $$
 \begin{aligned}
-{SpectralCentroid} &= \frac{f_s}{2(M - 1)} \frac{\sum_{m=0}^{M-1}{X_m[m] \cdot i}}{\sum_{m=0}^{M-1}{X_m[m]}} \\
+f_{centroid} &= \frac{f_s}{2(M - 1)} \frac{\sum_{m=0}^{M-1}{X_m[m] \cdot i}}{\sum_{m=0}^{M-1}{X_m[m]}} \\
 X_m &= |X|
 \end{aligned}
 $$
