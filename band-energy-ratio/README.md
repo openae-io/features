@@ -10,10 +10,10 @@ This feature is also known as *Partial Power*. $f_l$ and $f_u$ are the lower and
 
 $$
 \begin{aligned}
-{BandEnergyRatio} &= \frac{\sum_{m=m_l}^{m_u} {X_p}[m]}{\sum_{m=0}^{M-1} {X_p}[m]} \\
+{BandEnergyRatio} &= \frac{\sum_{m=m_l}^{m_u - 1} {X_p}[m]}{\sum_{m=0}^{M-1} {X_p}[m]} \\
 X_p &= |X|^2 \\
-m_l &= \lfloor M \frac{2 f_l}{f_s} \rfloor \\
-m_u &= \lfloor M \frac{2 f_u}{f_s} \rfloor
+m_l &= \lfloor M \frac{f_l}{2f_s} \rfloor \\
+m_u &= \lfloor M \frac{f_u}{2f_s} \rfloor
 \end{aligned}
 $$
 

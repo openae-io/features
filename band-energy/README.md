@@ -9,10 +9,10 @@ The band energy is defined as the energy in an arbitrary frequency band $[f_l, f
 
 $$
 \begin{aligned}
-{BandEnergy} &= \sum_{m=m_l}^{m_u} X_p[m] \\
+{BandEnergy} &= \sum_{m=m_l}^{m_u - 1} X_p[m] \\
 X_p &= |X|^2 \\
-m_l &= \lfloor M \frac{2 f_l}{f_s} \rfloor \\
-m_u &= \lfloor M \frac{2 f_u}{f_s} \rfloor
+m_l &= \lfloor M \frac{f_l}{2f_s} \rfloor \\
+m_u &= \lfloor M \frac{f_u}{2f_s} \rfloor
 \end{aligned}
 $$
 

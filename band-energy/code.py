@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def band_energy(
     spectrum: np.ndarray, samplerate: float, f_lower: float, f_upper: float
 ) -> float:
@@ -7,4 +8,4 @@ def band_energy(
     n = len(powerspectrum)
     n_lower = int(2 * n * f_lower / samplerate)
     n_upper = int(2 * n * f_upper / samplerate)
-    return np.sum(powerspectrum[n_lower : n_upper + 1])
+    return np.sum(powerspectrum[n_lower:n_upper])
