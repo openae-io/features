@@ -2,22 +2,22 @@ import numpy as np
 
 
 def _spectral_centroid(spectrum: np.ndarray, samplerate: float):
-    magnitudes = np.abs(spectrum)
-    sum = 0.0
-    sum_weighted = 0.0
-    for i, magnitude in enumerate(magnitudes):
-        sum += magnitude
-        sum_weighted += magnitude * i
-    return 0.5 * samplerate / (len(magnitudes) - 1) * (sum_weighted / sum)
+    ps = np.abs(spectrum) ** 2
+    ps_sum = 0.0
+    ps_sum_weighted = 0.0
+    for i, magnitude in enumerate(ps):
+        ps_sum += magnitude
+        ps_sum_weighted += magnitude * i
+    return 0.5 * samplerate / (len(ps) - 1) * (ps_sum_weighted / ps_sum)
 
 
 def spectral_variance(spectrum: np.ndarray, samplerate: float):
-    magnitudes = np.abs(spectrum)
     f_centroid = _spectral_centroid(spectrum, samplerate)
-    sum = 0.0
-    sum_weighted = 0.0
-    for i, magnitude in enumerate(magnitudes):
-        f = 0.5 * samplerate / (len(magnitudes) - 1) * i
-        sum += magnitude
-        sum_weighted += magnitude * (f - f_centroid) ** 2
-    return sum_weighted / sum
+    ps = np.abs(spectrum)
+    ps_sum = 0.0
+    ps_sum_weighted = 0.0
+    for i, magnitude in enumerate(ps):
+        f = 0.5 * samplerate / (len(ps) - 1) * i
+        ps_sum += magnitude
+        ps_sum_weighted += magnitude * (f - f_centroid) ** 2
+    return ps_sum_weighted / ps_sum
