@@ -23,4 +23,3 @@ $$
 
 - https://en.wikipedia.org/wiki/Zero-crossing_rate
 - Kim, H.-G., Moreau, N., & Sikora, T. (2006). MPEG-7 audio and beyond: Audio content indexing and retrieval. John Wiley & Sons.
-

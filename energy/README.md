@@ -14,4 +14,3 @@ $$
 ## References
 
 - https://en.wikipedia.org/wiki/Energy_(signal_processing)
-

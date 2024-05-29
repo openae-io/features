@@ -1,9 +1,12 @@
 import numpy as np
 
+
 def spectral_rolloff(spectrum: np.ndarray, samplerate: float, rolloff: int):
     magnitudes = np.abs(spectrum)
-    n = len(magnitudes)
-    magnitudes_cumsum = np.cumsum(magnitudes)
-    magnitudes_rolloff = rolloff / 100 * magnitudes_cumsum[-1]
-    index = np.searchsorted(magnitudes_cumsum, magnitudes_rolloff)
-    return 0.5 * samplerate * index / (n - 1)
+    magnitudes_sum_rolloff = (rolloff / 100) * np.sum(magnitudes)
+    magnitudes_sum = 0.0
+    for i, magnitude in enumerate(magnitudes):
+        magnitudes_sum += magnitude
+        if magnitudes_sum >= magnitudes_sum_rolloff:
+            return 0.5 * samplerate / (len(magnitudes) - 1) * i
+    return 0.5 * samplerate

@@ -21,4 +21,3 @@ The result is in the range of 0 Hz and the nyquist frequency (half the sampling 
 ## References
 
 - https://en.wikipedia.org/wiki/Spectral_centroid
-

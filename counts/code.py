@@ -2,7 +2,13 @@ import numpy as np
 
 
 def counts(signal: np.ndarray, threshold: float) -> int:
-    above_threshold = signal >= threshold
-    # count crossings from below threshold to above threshold
-    crossings = ~above_threshold[:-1] & above_threshold[1:]
-    return np.count_nonzero(crossings)
+    if len(signal) == 0:
+        return 0
+    result = 0
+    was_above_threshold = signal[0] >= threshold
+    for value in signal[1:]:
+        is_above_threshold = value >= threshold
+        if not was_above_threshold and is_above_threshold:
+            result += 1
+        was_above_threshold = is_above_threshold
+    return result
