@@ -7,20 +7,34 @@ tags: [spectral, spectral moments]
 
 Spectral kurtosis is a measure of the "tailedness" or peakedness of the power spectrum around its mean, the [spectral centroid](../spectral-centroid/) $f_{centroid}$. It indicates how much of the spectrum's power is concentrated in the tails of the distribution compared to the center:
 
-- **High kurtosis**: Indicates a distribution with heavy tails and a sharp peak (leptokurtic). This suggests that the spectral energy is concentrated in a few frequencies with significant deviations from the mean.
-- **Low kurtosis**: Indicates a flatter distribution (platykurtic). This suggests that the spectral energy is more evenly spread across frequencies.
-- **Normal kurtosis** (value of 3): Indicates a normal distribution (mesokurtic).
+- **High kurtosis**: Indicates a spectrum with heavy tails and a sharp peak (leptokurtic), where spectral energy is concentrated in a few dominant frequencies far from the mean.
+- **Low kurtosis**: Indicates a flatter spectrum (platykurtic), where spectral energy is more evenly distributed across frequencies.
+- **Normal kurtosis**: A kurtosis value of 3 corresponds to a normal distribution (mesokurtic).
 
-It is computed from the power spectrum $X_p = |X|^2 \in \mathbb{R}^M$.
+Spectral kurtosis is computed from the power spectrum $X_p = |X|^2 \in \mathbb{R}^M$ using the following formula:
 
 $$
-\begin{aligned}
-\text{SpectralKurtosis} &= \frac{m_4}{\sqrt{m_2}^4} \\
-m_x  &= \sum_{m=0}^{M-1}{(f(m) - f_{centroid})^x \cdot p(m)} \\
-f(i) &= \frac{i \cdot f_s}{2(M - 1)} \\
-p(i) &= \frac{X_p[i]}{\sum_{m=0}^{M-1}{X_p[m]}}
-\end{aligned}
+\text{SpectralKurtosis} = \frac{m_4}{m_2^2},
 $$
+
+where:
+
+- $m_x$ is the $x$-th central moment of the spectrum:
+
+  $$
+  m_x = \sum_{m=0}^{M-1} (f(m) - f_{centroid})^x \cdot p(m),
+  $$
+
+- $f(m)$ is the frequency corresponding to bin $m$:
+
+  $$
+  f(m) = \frac{m \cdot f_s}{2(M - 1)},
+  $$
+
+- $p(m)$ is the normalized power at bin $m$:
+  $$
+  p(m) = \frac{X_p[m]}{\sum_{k=0}^{M-1} X_p[k]}.
+  $$
 
 ## References
 
