@@ -22,7 +22,7 @@ where:
 - $m_k$ is the $k$-th central moment of the spectrum:
 
   $$
-  m_x = \sum_{m=0}^{M-1} (f(m) - f_{centroid})^k \cdot p(m),
+  m_k = \sum_{m=0}^{M-1} (f(m) - f_{centroid})^k \cdot p(m),
   $$
 
 - $f(m)$ is the frequency corresponding to bin $m$:
