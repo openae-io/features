@@ -5,19 +5,27 @@ tags: [spectral]
 
 # Partial power
 
-Partial power is defined as the ratio of the energy in an arbitrary frequency band $[f_l, f_u)$ and the total energy.
-This feature is also known as *band energy ratio*. $f_l$ and $f_u$ are the lower and upper frequency bounds of the band.
+Partial power quantifies the proportion of energy within a specified frequency band $[f_l, f_u)$ relative to the total energy. It is also known as the *band energy ratio*.
+The frequency band is defined by its lower ($f_l$) and upper ($f_u$) frequency bounds.
 
 $$
-\begin{aligned}
-{PartialPower} &= \frac{\sum_{m=m_l}^{m_u - 1} {X_p}[m]}{\sum_{m=0}^{M-1} {X_p}[m]} \\
-X_p &= |X|^2 \\
-m_l &= \lfloor M \frac{f_l}{2f_s} \rfloor \\
-m_u &= \lfloor M \frac{f_u}{2f_s} \rfloor
-\end{aligned}
+PartialPower = \frac{\sum_{m=m_l}^{m_u - 1} {X_p}[m]}{\sum_{m=0}^{M-1} {X_p}[m]} \\
 $$
 
-Where $m \in [0, M)$ is the bin index of the spectrum $X$ and the power spectrum $X_p$.
+where:
+
+- $X_p = |X|^2$ is the power spectrum.
+- $M$ is the total number of bins.
+- $m_l = \lfloor M \frac{f_l}{2f_s} \rfloor$ is the lower bin index corresponding to $f_l$
+- $m_u = \lfloor M \frac{f_u}{2f_s} \rfloor$ is the upper bin index corresponding to $f_u$
+- $m \in [0, M)$ represents the spectral bin indices.
+
+## Parameters
+
+| Name      | Description           | Unit  | Limits               |
+|-----------|-----------------------|-------|----------------------|
+| `lower`   | Lower frequency bound | Hz    | [0, $\frac{f_s}{2}$] |
+| `upper`   | Upper frequency bound | Hz    | [0, $\frac{f_s}{2}$] |
 
 ## References
 
