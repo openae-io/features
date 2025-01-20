@@ -19,10 +19,10 @@ $$
 
 where:
 
-- $m_x$ is the $x$-th central moment of the spectrum:
+- $m_k$ is the $k$-th central moment of the spectrum:
 
   $$
-  m_x = \sum_{m=0}^{M-1} (f(m) - f_{centroid})^x \cdot p(m),
+  m_x = \sum_{m=0}^{M-1} (f(m) - f_{centroid})^k \cdot p(m),
   $$
 
 - $f(m)$ is the frequency corresponding to bin $m$:
@@ -32,6 +32,7 @@ where:
   $$
 
 - $p(m)$ is the normalized power at bin $m$:
+
   $$
   p(m) = \frac{X_p[m]}{\sum_{k=0}^{M-1} X_p[k]}.
   $$

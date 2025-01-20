@@ -14,7 +14,7 @@ Skewness is a statistical measure that quantifies the asymmetry of a dataset's p
 The skewness is calculated using the third and second central moment:
 
 $$
-\text{Skewness} = \frac{m_3}{m_2^{3/2}},
+\text{Skewness} = \frac{m_3}{\sqrt{m_2}^3},
 $$
 
 where:
