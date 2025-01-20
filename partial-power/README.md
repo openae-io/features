@@ -9,15 +9,15 @@ Partial power quantifies the proportion of energy within a specified frequency b
 The frequency band is defined by its lower ($f_l$) and upper ($f_u$) frequency bounds.
 
 $$
-\text{PartialPower} = \frac{\sum_{m=m_l}^{m_u - 1} {X_p}[m]}{\sum_{m=0}^{M-1} {X_p}[m]} \\
+\text{PartialPower} = \frac{\sum_{m=m_l}^{m_u - 1} {X_p}[m]}{\sum_{m=0}^{M-1} {X_p}[m]},
 $$
 
 where:
 
-- $X_p = |X|^2$ is the power spectrum.
-- $M$ is the total number of bins.
-- $m_l = \lfloor M \frac{f_l}{2f_s} \rfloor$ is the lower bin index corresponding to $f_l$
-- $m_u = \lfloor M \frac{f_u}{2f_s} \rfloor$ is the upper bin index corresponding to $f_u$
+- $X_p = |X|^2$ is the power spectrum,
+- $M$ is the total number of bins,
+- $m_l = \lfloor M \frac{f_l}{2f_s} \rfloor$ is the lower bin index corresponding to $f_l$,
+- $m_u = \lfloor M \frac{f_u}{2f_s} \rfloor$ is the upper bin index corresponding to $f_u$,
 - $m \in [0, M)$ represents the spectral bin indices.
 
 ## Parameters
