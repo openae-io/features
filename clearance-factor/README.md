@@ -8,7 +8,7 @@ tags: [basic]
 The clearance factor is defined as the ratio of the peak amplitude and the squared mean of the square roots of the absolute amplitudes.
 
 $$
-{ClearanceFactor} = \frac{\max |x|}{(\frac{1}{N} \sum_{i=0}^{N-1}{\sqrt{|x[i]|}})^2}
+\text{ClearanceFactor} = \frac{\max |x|}{(\frac{1}{N} \sum_{i=0}^{N-1}{\sqrt{|x[i]|}})^2}
 $$
 
 ## Applications

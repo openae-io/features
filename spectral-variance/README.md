@@ -10,7 +10,7 @@ It is computed from the power spectrum $X_p = |X|^2 \in \mathbb{R}^M$.
 
 $$
 \begin{aligned}
-SpectralVariance &= \sum_{m=0}^{M-1}{(f(m) - f_{centroid})^2 \cdot p(m)} \\
+\text{SpectralVariance} &= \sum_{m=0}^{M-1}{(f(m) - f_{centroid})^2 \cdot p(m)} \\
 f(i) &= \frac{i \cdot f_s}{2(M - 1)} \\
 p(i) &= \frac{X_p[i]}{\sum_{m=0}^{M-1}{X_p[m]}}
 \end{aligned}

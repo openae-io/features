@@ -8,5 +8,5 @@ tags: [basic, ae]
 The peak amplitude is the maximum absolute amplitude of a signal.
 
 $$
-{PeakAmplitude} = \max |x|
+\text{PeakAmplitude} = \max |x|
 $$

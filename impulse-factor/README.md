@@ -8,7 +8,7 @@ tags: [basic]
 The impulse factor is defined as the ratio of peak amplitude and mean of absolute values.
 
 $$
-{ImpulseFactor} = \frac{\max |x|}{\frac{1}{N} \sum_{i=0}^{N-1}{|x[i]|}}
+\text{ImpulseFactor} = \frac{\max |x|}{\frac{1}{N} \sum_{i=0}^{N-1}{|x[i]|}}
 $$
 
 ## Applications
