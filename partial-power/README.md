@@ -1,12 +1,12 @@
 ---
-title: Band energy ratio
+title: Partial power
 tags: [spectral]
 ---
 
-# Band energy ratio
+# Partial power
 
-The band energy ratio is defined as the ratio of the energy in an arbitrary frequency band $[f_l, f_u)$ and the total energy.
-This feature is also known as *partial power*. $f_l$ and $f_u$ are the lower and upper frequency bounds of the band.
+Partial power is defined as the ratio of the energy in an arbitrary frequency band $[f_l, f_u)$ and the total energy.
+This feature is also known as *band energy ratio*. $f_l$ and $f_u$ are the lower and upper frequency bounds of the band.
 
 $$
 \begin{aligned}
@@ -22,3 +22,4 @@ Where $m \in [0, M)$ is the bin index of the spectrum $X$ and the power spectrum
 ## References
 
 - Eyben, F. (2016). Real-time Speech and Music Classification by Large Audio Feature Space Extraction. https://doi.org/10.1007/978-3-319-27299-3
+- Sause, M. G. R. (2016). In Situ Monitoring of Fiber-Reinforced Composites: Theory, Basic Concepts, Methods, and Applications (Vol. 242). Springer. https://doi.org/10.1007/978-3-319-30954-5
