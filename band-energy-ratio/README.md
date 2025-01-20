@@ -5,7 +5,7 @@ tags: [spectral]
 
 # Band energy ratio
 
-The band energy ratio is defined as the ratio of the [band energy](../band-energy/) in an arbitrary frequency band $[f_l, f_u)$ and the total energy.
+The band energy ratio is defined as the ratio of the energy in an arbitrary frequency band $[f_l, f_u)$ and the total energy.
 This feature is also known as *partial power*. $f_l$ and $f_u$ are the lower and upper frequency bounds of the band.
 
 $$
