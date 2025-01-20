@@ -9,7 +9,7 @@ The RMS is also known as the quadratic mean and is a measure for the average ene
 RMS is widely used for AE / structure-borne sound analysis, e.g. for wear detection or leakage detection.
 
 $$
-\text{rms} = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1}{x[i] ^ 2}}
+\text{RMS} = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1}{x[i] ^ 2}}
 $$
 
 ## Applications
