@@ -5,17 +5,35 @@ tags: [statistics]
 
 # Skewness
 
-Skewness is a statistical measure that quantifies the asymmetry of the probability distribution of a dataset. It provides information about the direction and degree of skew (departure from symmetry) in the distribution. Skewness helps us understand whether the data is concentrated more to the left or right of the mean, and it is an important aspect of data analysis and statistics.
+Skewness is a statistical measure that quantifies the asymmetry of a dataset's probability distribution relative to its mean. It indicates the direction and degree of skew (departure from symmetry) in the distribution, helping to identify whether data values are concentrated more on one side of the mean.
 
-The skewness is computed using the third central moment:
+- **Positive skewness**: The distribution has a long tail on the right side (values greater than the mean).
+- **Negative skewness**: The distribution has a long tail on the left side (values less than the mean).
+- **Zero skewness**: The distribution is symmetric.
+
+The skewness is calculated using the third and second central moment:
 
 $$
-\begin{aligned}
-\text{Skewness} &= \frac{m_3}{m_2^{3/2}} \\
-m_k &= \frac{1}{N} \sum_{i=0}^{N-1}{(x[i] - \overline{x})^k} \\
-\overline{x} &= \frac{1}{N} \sum_{i=0}^{N-1}{x[i]}
-\end{aligned}
+\text{Skewness} = \frac{m_3}{m_2^{3/2}},
 $$
+
+where:
+
+- $m_k$ is the $k$-th central moment:
+
+  $$
+  m_k = \frac{1}{N} \sum_{i=0}^{N-1} (x[i] - \overline{x})^k,
+  $$
+
+  with $k = 3$ for skewness and $k = 2$ for variance.
+
+- $\overline{x}$ is the mean of the dataset:
+
+  $$
+  \overline{x} = \frac{1}{N} \sum_{i=0}^{N-1} x[i].
+  $$
+
+- $N$ is the number of data points in the dataset.
 
 ## References
 
