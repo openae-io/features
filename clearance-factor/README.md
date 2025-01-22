@@ -22,3 +22,4 @@ $$
 ## References
 
 - https://de.mathworks.com/help/predmaint/ug/signal-features.html
+- Sharma, V., & Parey, A. (2016). A Review of Gear Fault Diagnosis Using Various Condition Indicators. Procedia Engineering, 144, 253–263. https://doi.org/10.1016/j.proeng.2016.05.131
