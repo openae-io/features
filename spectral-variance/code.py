@@ -13,7 +13,7 @@ def _spectral_centroid(spectrum: np.ndarray, samplerate: float):
 
 def spectral_variance(spectrum: np.ndarray, samplerate: float):
     f_centroid = _spectral_centroid(spectrum, samplerate)
-    ps = np.abs(spectrum)
+    ps = np.abs(spectrum) ** 2
     ps_sum = 0.0
     ps_sum_weighted = 0.0
     for i, magnitude in enumerate(ps):
