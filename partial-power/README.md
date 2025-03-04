@@ -5,8 +5,8 @@ tags: [spectral]
 
 # Partial power
 
-Partial power quantifies the proportion of energy within a specified frequency band $[f_l, f_u)$ relative to the total energy. It is also known as the *band energy ratio*.
-The frequency band is defined by its lower ($f_l$) and upper ($f_u$) frequency bounds.
+Partial power quantifies the proportion of energy within a specified frequency band $[f_{min}, f_{max})$ relative to the total energy. It is also known as the *band energy ratio*.
+The frequency band is defined by its lower ($f_{min}$) and upper ($f_{max}$) frequency bounds.
 
 $$
 \text{PartialPower} = \frac{\sum_{m=m_l}^{m_u - 1} {X_p}[m]}{\sum_{m=0}^{M-1} {X_p}[m]},
@@ -16,16 +16,16 @@ where:
 
 - $X_p = |X|^2$ is the power spectrum,
 - $M$ is the total number of bins,
-- $m_l = \lfloor M \frac{f_l}{2f_s} \rfloor$ is the lower bin index corresponding to $f_l$,
-- $m_u = \lfloor M \frac{f_u}{2f_s} \rfloor$ is the upper bin index corresponding to $f_u$,
+- $m_l = \lfloor M \frac{f_{min}}{2f_s} \rfloor$ is the lower bin index corresponding to $f_{min}$,
+- $m_u = \lfloor M \frac{f_{max}}{2f_s} \rfloor$ is the upper bin index corresponding to $f_{max}$,
 - $m \in [0, M)$ represents the spectral bin indices.
 
 ## Parameters
 
-| Name      | Description           | Unit  | Limits               |
-|-----------|-----------------------|-------|----------------------|
-| `lower`   | Lower frequency bound | Hz    | [0, $\frac{f_s}{2}$] |
-| `upper`   | Upper frequency bound | Hz    | [0, $\frac{f_s}{2}$] |
+| Name     | Description           | Unit  | Limits               |
+|----------|-----------------------|-------|----------------------|
+| `fmin`   | Lower frequency bound | Hz    | [0, $\frac{f_s}{2}$] |
+| `fmax`   | Upper frequency bound | Hz    | [0, $\frac{f_s}{2}$] |
 
 ## References
 
