@@ -11,7 +11,7 @@ entropy while a spectrum with flat distribution will have high entropy. The defi
 Spectral entropy is computed from the power spectrum $X_p = |X|^2 \in \mathbb{R}^M$ using the following formula:
 
 $$
-\text{SpectralEntropy} = -\frac{\sum_{m=0}^{M-1}{p(m) \cdot \log_2{p(m)}}}{\log_2{M - 1}},
+\text{SpectralEntropy} = -\frac{\sum_{m=0}^{M-1}{p(m) \cdot \log_2{p(m)}}}{\log_2{M}},
 $$
 
 where:
@@ -28,7 +28,7 @@ where:
 
 ## Normalization
 
-The entropy is normalized by dividing by $\log_2{M-1}$ to constrain the output to the range $[0, 1]$. This normalization guarantees that the spectral entropy is comparable across different spectra, independent of their resolution. The normalized value of 0 indicates a perfectly deterministic spectrum (e.g., a single peak), while a value of 1 indicates maximum uncertainty (e.g., a flat spectrum).
+The entropy is normalized by dividing by $\log_2{M}$ to constrain the output to the range $[0, 1]$. This normalization guarantees that the spectral entropy is comparable across different spectra, independent of their resolution. The normalized value of 0 indicates a perfectly deterministic spectrum (e.g., a single peak), while a value of 1 indicates maximum uncertainty (e.g., a flat spectrum).
 
 ## Single-pass computation
 
