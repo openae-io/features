@@ -5,13 +5,13 @@ tags: [spectral]
 
 # Spectral rolloff
 
-The $n\%$ spectral roll-off point is defined as the frequency below which $n \%$ of the total energy of the spectrum is contained.
-It is computed from the power spectrum $X_p = |X|^2 \in \mathbb{R}^M$.
+The spectral roll-off point is defined as the frequency below which a specified proportion of the total energy of the spectrum is contained. This proportion is given by the `rolloff` parameter, which is a value in the range $[0, 1]$.
 
-The $n\%$ roll-off point is estimated by iteratively increasing $r \in [0, M)$ in the following equation until the equation becomes valid:
+It is computed from the power spectrum $X_p = |X|^2 \in \mathbb{R}^M$.
+The roll-off point is estimated by iteratively increasing $r \in [0, M)$ in the following equation until the equation becomes valid:
 
 $$
-\sum_{m=0}^{r} X_p[m] \ge \frac{n}{100} \sum_{m=0}^{M-1} X_p[m]
+\sum_{m=0}^{r} X_p[m] \ge n \sum_{m=0}^{M-1} X_p[m]
 $$
 
 The roll-off frequency $f_{rolloff}$ can be computed from $r$ and the sampling rate $f_s$:
@@ -20,13 +20,13 @@ $$
 f_{rolloff} = \frac{f_s}{2} \frac{r}{M}
 $$
 
-Typical values for $n$ are 95, 90, 75 and 50 %.
+Typical values for $n$ are 0.95, 0.90, 0.75 and 0.50.
 
 ## Parameters
 
 | Name      | Description        | Unit | Limits   |
 |-----------|--------------------|------|----------|
-| `rolloff` | Roll-off point $n$ | %    | [0, 100] |
+| `rolloff` | Roll-off point $n$ |      | [0, 1] |
 
 ## References
 
