@@ -15,9 +15,10 @@ f_{centroid} = \frac{f_s}{2(M - 1)} \cdot \frac{\sum_{m=0}^{M-1} X_p[m] \cdot m}
 $$
 
 where:
-- $X_p[m]$: The power at frequency bin $m$,
-- $M$: The total number of frequency bins,
-- $f_s$: The sampling rate of the signal.
+
+- $X_p[m]$ is the power at frequency bin $m$,
+- $M$ is the total number of frequency bins,
+- $f_s$ is the sampling rate of the signal.
 
 The result lies within the range of $0$ Hz to the Nyquist frequency, which is $f_s / 2$.
 

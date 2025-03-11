@@ -6,16 +6,25 @@ tags: [spectral]
 # Spectral entropy
 
 The spectral entropy captures the "peakiness" of a spectrum. A spectrum with sharp peaks will have low
-entropy while a spectrum with flat distribution will have high entropy. The definition is based on the definition of the Shannon entropy [^1]:
+entropy while a spectrum with flat distribution will have high entropy. The definition is based on the definition of the Shannon entropy.
+
+Spectral entropy is computed from the power spectrum $X_p = |X|^2 \in \mathbb{R}^M$ using the following formula:
 
 $$
-\text{SpectralEntropy} = -\frac{\sum_{m=0}^{M-1}{p[m] \cdot \log_2{p[m]}}}{\log_2{M - 1}}
+\text{SpectralEntropy} = -\frac{\sum_{m=0}^{M-1}{p(m) \cdot \log_2{p(m)}}}{\log_2{M - 1}},
 $$
 
 where:
-- $p[m] = \frac{X_p[m]}{\sum_{m=0}^{M-1} X_p[m]}$: The probability mass function (PMF) of the power spectrum $X_p = |X|^2 \in \mathbb{R}^M$,
-- $X_p[m]$: The power at frequency bin $m$,
-- $M$: The total number of frequency bins.
+
+- $p(m)$ is the probability mass function (PMF) of the power spectrum $X_p$:
+
+  $$
+  p(m) = \frac{X_p[m]}{\sum_{m=0}^{M-1} X_p[m]},
+  $$
+
+- $X_p[m]$ is the power at frequency bin $m$,
+
+- $M$ is the total number of frequency bins.
 
 ## Normalization
 
@@ -23,13 +32,13 @@ The entropy is normalized by dividing by $\log_2{M-1}$ to constrain the output t
 
 ## Single-pass computation
 
-The entropy is derived from the PMF of the power spectrum $p[m]$. As a result, computing the entropy typically requires two steps: first, calculating the total energy of the power spectrum, $X_{p,sum} = \sum_{m=0}^{M-1}{X_p[m]}$, and second, computing the entropy using the PMF $p[m] = \frac{X_p[m]}{X_{p,sum}}$.
+The entropy is derived from the PMF of the power spectrum $p(m)$. As a result, computing the entropy typically requires two steps: first, calculating the total energy of the power spectrum, $X_{p,sum} = \sum_{m=0}^{M-1}{X_p[m]}$, and second, computing the entropy using the PMF $p(m) = \frac{X_p[m]}{X_{p,sum}}$.
 
 However, the entropy formula can be reformulated to allow for a single-pass computation:
 
 $$
 \begin{aligned}
--\sum_{m=0}^{M-1}{p[m]\cdot \log_2{p[m]}}
+-\sum_{m=0}^{M-1}{p(m)\cdot \log_2{p(m)}}
 &= -\sum_{m=0}^{M-1}{\frac{X_p[m]}{X_{p,sum}} \cdot \log_2{\frac{X_p[m]}{X_{p,sum}}}} \\
 &= -\sum_{m=0}^{M-1}{\frac{X_p[m]}{X_{p,sum}} \cdot (\log_2{X_p[m]} - \log_2{X_{p,sum}})} \\
 &= -\sum_{m=0}^{M-1}{\frac{X_p[m]}{X_{p,sum}} \log_2{X_p[m]}} + \log_2{X_{p,sum}} \cdot \underbrace{\sum_{m=0}^{M-1}{\frac{X_p[m]}{X_{p,sum}}}}_{= 1} \\
